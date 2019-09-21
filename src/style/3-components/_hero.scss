@@ -1,0 +1,52 @@
+#logo-full {
+    border-radius: $border-rounded-border-radius;
+    margin-left: 2vw;
+    margin-top: 10vh;
+    width: 45vw;
+
+    @media (max-width: $breakpoint-medium) {
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+}
+
+#banner-call div {
+    &:nth-of-type(1) {
+        text-align: right;
+    }
+
+    &:nth-of-type(2) {
+        text-align: left;
+    }
+
+    @media (max-width: $breakpoint-small) {
+        text-align: center !important;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    .animation-driveby {
+        animation: none;
+        animation-duration: $animation-fade-duration;
+        animation-timing-function: linear;
+    }
+}
+
+.animation-driveby {
+    animation-duration: 1s;
+    animation-name: driveby;
+    animation-timing-function: linear;
+}
+
+@keyframes driveby {
+    0% {
+        opacity: 1;
+        transform: skewY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: skewY(-5deg);
+    }
+}

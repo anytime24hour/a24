@@ -1,0 +1,31 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "plugins": ["flowtype", "prettier", "import"],
+    "extends": [
+        "airbnb-base",
+        "plugin:flowtype/recommended",
+        "plugin:prettier/recommended",
+        "prettier",
+        "prettier/flowtype"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "settings": {
+        "flowtype": {
+            "onlyFilesWithFlowAnnotation": true
+        }
+    },
+    "rules": {
+        "prettier/prettier": "error"
+    }
+}

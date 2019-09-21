@@ -1,0 +1,6 @@
+{
+    "extends": "@girder/pug-lint-config",
+    "validateIndentation": 4,
+    "validateLineBreaks": null,
+    "disallowSpacesInsideAttributeBrackets": null
+}

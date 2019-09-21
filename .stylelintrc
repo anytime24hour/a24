@@ -1,0 +1,12 @@
+{
+    "plugins": ["stylelint-prettier"],
+    "extends": [
+        "stylelint-config-sass-guidelines",
+        "stylelint-a11y/recommended",
+        "stylelint-prettier/recommended"
+    ],
+    "rules": {
+        "prettier/prettier": true,
+        "selector-max-id": 1
+    }
+}

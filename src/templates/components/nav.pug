@@ -1,0 +1,46 @@
+.uk-section.uk-padding-remove(style="margin-top: -80px;")
+
+    .nav(data-uk-sticky='animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 240')
+
+        nav.uk-navbar.uk-navbar-container(data-uk-navbar)
+
+
+                .uk-navbar-left
+                    a.uk-navbar-toggle.uk-text-large(
+                        class='uk-hidden@m',
+                        href='#sidebar',
+                        uk-toggle
+                    ): span(uk-navbar-toggle-icon)
+
+                    a.uk-navbar-item.uk-logo(class='uk-visible@s', href='#')
+                        img#logo.uk-svg(src="assets/images/logo.svg")
+
+                    ul.uk-navbar-nav.uk-text-uppercase(
+                        class='uk-visible@m',
+                        uk-scrollspy-nav='closest: li; scroll: true; offset: 80;'
+                    )
+                        li: a(href='#about', uk-scroll) About
+                        li: a(href='#services', uk-scroll) Services
+                        li: a(href='#locations', uk-scroll) Locations
+                        li: a(href='#contact', uk-scroll) Contact
+
+                .uk-navbar-right
+                    .uk-navbar-item
+                        a#phone.c2a.uk-button.uk-button-primary.uk-border-pill.uk-text-large(
+                            href='tel:1-478-994-8554'
+                        )
+                            span(class='uk-visible@l') Call Now: &nbsp;
+                            span.uk-text-danger.uk-text-bold 478-994-8554
+
+#sidebar(uk-offcanvas="overlay: true")
+    .uk-offcanvas-bar
+
+        a.uk-navbar-item.uk-logo.uk-margin-medium-top.uk-margin-large-bottom(href=""): img(src="/assets/images/logo.svg", alt="")
+
+        button.uk-offcanvas-close(type="button", uk-close)
+
+        ul.uk-nav.uk-nav-offcanvas.uk-margin-small-right.uk-text-large.uk-text-right(uk-scrollspy-nav="closest: li; scroll: true; offset: 80;")
+            li.uk-margin-small: a(href="#about" uk-scroll) About
+            li.uk-margin-small: a(href="#services" uk-scroll) Services
+            li.uk-margin-small: a(href="#locations" uk-scroll) Locations
+            li.uk-margin-small: a(href="#contact" uk-scroll) Contact

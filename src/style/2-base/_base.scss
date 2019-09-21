@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header,
+footer {
+    background-color: $color-background;
+}
