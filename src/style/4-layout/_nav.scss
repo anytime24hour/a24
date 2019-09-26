@@ -2,14 +2,16 @@
     height: 60px;
 }
 
-#phone {
-    @media screen and (max-width: $breakpoint-xsmall-max) {
-        font-size: $text-small-font-size;
+#sidebar {
+    img.uk-logo {
+        @media screen and (max-width: $breakpoint-xsmall-max) {
+            margin-bottom: 1em !important;
+        }
     }
-}
 
-#sidebar li a {
-    @media screen and (max-width: $breakpoint-xsmall-max) {
-        font-size: $text-large-font-size;
+    li a {
+        @media screen and (max-width: $breakpoint-xsmall-max) {
+            font-size: $text-large-font-size;
+        }
     }
 }
