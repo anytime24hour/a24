@@ -1,11 +1,37 @@
 // colors
 
+// MUTCD Color Spec
+// https://mutcd.fhwa.dot.gov/kno-colorspec.htm
+
+// Yellow - 116 (Pantone)
 $color-dot-yellow: #ffcd00;
-$color-dot-red: #ab162b;
-$color-dot-orange: #e97200;
+// Orange - 152
+$color-dot-orange: #e57200;
+// Red - 187
+$color-dot-red: #a6192e;
+// Pink - 198
+$color-dot-pink: #df4661;
+// Purple - 259
+$color-dot-purple: #6d2077;
+// Blue - 294
+$color-dot-blue: #002f6c;
+// Green - 342
 $color-dot-green: #006747;
+// Yellow-Green - 382
+$color-dot-yellow-green: #c4d600;
+// Brown - 469
+$color-dot-brown: #693f23;
 
-$color-primary: #000;
-$color-secondary: #fff;
+// Theme Colors
+$color-light: #fff;
+$color-dark: #222;
+$color-primary: $color-dot-orange;
 
-$color-background: #222;
+$color-dark-background: #222;
+$color-light-background: #fff;
+$color-primary-background: $color-dot-orange;
+
+$color-link: $color-dot-orange;
+
+$color-warning: $color-dot-orange;
+$color-danger: $color-dot-red;

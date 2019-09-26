@@ -7,18 +7,18 @@ $base-heading-font-family: $font-headings;
 // $global-color: #666;
 // $global-inverse-color: #fff;
 // $global-muted-background: #f8f8f8;
-$global-primary-background: $color-dot-orange; // #1e87f0;
+$global-primary-background: $color-primary-background; // #1e87f0;
 // $global-success-background: #32d296;
-$global-warning-background: $color-dot-orange; // #faa05a;
-$global-danger-background: $color-dot-red; // #f0506e;
+$global-warning-background: $color-warning; // #faa05a;
+$global-danger-background: $color-danger; // #f0506e;
 // $global-muted-color: #999;
 // $global-background: #fff;
 // $global-secondary-background: #222;
-$global-link-color: $color-dot-orange; // #1e87f0;
+$global-link-color: $color-link; // #1e87f0;
 // $global-link-hover-color: #0f6ecd;
 // $base-ins-background: #ffd;
 // $base-mark-background: #ffd;
-$global-border: $color-dot-orange; // #e5e5e5;
+$global-border: $color-primary; // #e5e5e5;
 // $base-selection-background: #39f;
 // $form-select-option-color: #444;
 // $lightbox-background: #000;
@@ -28,15 +28,15 @@ $global-border: $color-dot-orange; // #e5e5e5;
 // $tooltip-background: #666;
 // $box-shadow-bottom-background: #444;
 
+$button-primary-color: #222;
+$button-primary-hover-color: #222;
+$button-primary-active-color: #222;
+
 // 2. Import default variables and available mixins.
 @import '~uikit/src/scss/variables-theme';
 @import '~uikit/src/scss/mixins-theme';
 
 // 3. Your custom mixin overwrites.
-
-@mixin hook-button-primary {
-    color: #222;
-}
 
 @mixin hook-navbar-container() {
     background-color: $global-secondary-background;
