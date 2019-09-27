@@ -1,0 +1,66 @@
+{
+    "Air System": [
+        "Air Compressor",
+        "Air Dryer",
+        "Air Governor",
+        "Air Lines & Hoses",
+        "Gladhands",
+        "Valves"
+    ],
+    "Axle, Suspension & Steering": [
+        "Airbags",
+        "Axle",
+        "Leveling Valve",
+        "Power Steering Hoses",
+        "Springs"
+    ],
+    "Brake System": [
+        "Adjustment",
+        "Air Lines",
+        "Brake Chamber (Maxi, Pancake)",
+        "Brakes",
+        "Valves"
+    ],
+    "Cooling System": ["Fan Clutch", "Hoses & Fittings", "Sensors", "Water Pump"],
+    "Driveline": [
+        "Clutch Adjustment",
+        "Clutch Pedal Linkage",
+        "Driveshaft",
+        "Transmission Shifter Linkage"
+    ],
+    "Electrical System": [
+        "Alternator",
+        "Batteries",
+        "Computer Diagnostic",
+        "Lights",
+        "Sensors",
+        "Starter",
+        "Wiring & Fuses"
+    ],
+    "Engine": [
+        "Belt Tensioner & Pulleys",
+        "Belts",
+        "Diesel Exhaust Fluid (DEF)",
+        "Emissions/EGR/DPF/Regeneration",
+        "Filters",
+        "Turbo Hoses & Clamps"
+    ],
+    "Fuel System": ["Filters", "Fuel Delivery", "Fuel Prime", "Fuel Injector Lines", "Water Pump"],
+    "Trailer Systems": [
+        "5th Wheel",
+        "Electrical 7-Way/Pigtail Wiring, Boxes, Lights",
+        "Landing Gear Legs (Dolly Legs)",
+        "Liftgate/Hydraulic Ramps",
+        "Reefer Engine",
+        "Rollup & Swing Doors",
+        "Roof Leak",
+        "Tandems"
+    ],
+    "Wheels & Tires": ["Bearings", "Mud Flaps & Brackets", "Tires", "Wheel Seals"],
+    "And More...": [
+        "DOT/Federal Inspections",
+        "Lockouts",
+        "Welding (Select Areas)",
+        "Hamburger & Bottle Water"
+    ]
+}
