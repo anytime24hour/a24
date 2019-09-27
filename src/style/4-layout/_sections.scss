@@ -1,6 +1,7 @@
-// TODO: Used for testing only. Remove.
-section {
-    min-height: 80vh;
+#about,
+#philosophy,
+#locations {
+    min-height: 60vh;
 }
 
 #about {
@@ -24,6 +25,15 @@ section {
 }
 
 #contact {
+    .uk-logo {
+        background-color: darken($color-dot-orange, 30%);
+        border-radius: 500px;
+        padding: 5% 20%;
+    }
+    .uk-button-primary {
+        border: $global-border-width solid $global-secondary-background;
+        padding: 0.5em 1.5em;
+    }
 }
 
 .slant-right {
