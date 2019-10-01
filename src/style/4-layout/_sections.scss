@@ -14,7 +14,17 @@
     position: relative;
 
     h1 {
-        margin-top: 2em;
+        margin-top: 10%;
+    }
+
+    #map {
+        height: 480px;
+        width: 100%;
+
+        @media screen and (max-width: $breakpoint-small-max) {
+            height: 400px;
+            width: 100%;
+        }
     }
 }
 
