@@ -5,7 +5,7 @@ $base-heading-font-family: $font-headings;
 
 // $global-emphasis-color: #333;
 // $global-color: #666;
-// $global-inverse-color: #fff;
+$global-inverse-color: #fff;
 // $global-muted-background: #f8f8f8;
 $global-primary-background: $color-primary-background; // #1e87f0;
 // $global-success-background: #32d296;
@@ -27,6 +27,9 @@ $global-border: $color-primary; // #e5e5e5;
 // $table-row-active-background: #ffd;
 // $tooltip-background: #666;
 // $box-shadow-bottom-background: #444;
+
+$inverse-global-color: rgba($global-inverse-color, 0.9) !default;
+$inverse-global-muted-color: rgba($global-inverse-color, 0.7) !default;
 
 $button-primary-color: #222;
 $button-primary-hover-color: #222;
