@@ -26,7 +26,10 @@
         "lint:scss": "stylelint --fix \"src/style/**/*.scss\"",
         "start": "parcel src/index.pug --out-dir public",
         "stylelint-check": "stylelint-config-prettier-check",
-        "pa11y": "pa11y ./public/index.html"
+        "pa11y": "pa11y ./public/index.html",
+        "remotedebug": "remotedebug_ios_webkit_adapter --port=9000",
+        "predeploy": "npm run clean && npm run build",
+        "deploy": "scp -rP 65002 ./dist/* u290183021@185.201.10.52:public_html/a24"
     },
     "staticFiles": {
         "staticPath": [
