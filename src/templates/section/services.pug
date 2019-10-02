@@ -1,16 +1,18 @@
-section#services.uk-section.uk-container.uk-margin-large-top
-    h1#services--header.uk-heading-bullet.uk-margin-remove-bottom Services
-        blockquote.uk-text-muted.uk-margin-remove.
-            Well the ICC is a checkin' on down the line...</br>
-            ..Well, my rig's a little old but that don't mean she's slow
+section#services.uk-section
+    div.img(class='uk-visible@m')
+    .uk-container
+        h1#services--header.uk-heading-bullet.uk-margin-remove-bottom Services
+            blockquote.uk-text-muted.uk-margin-remove.
+                Well the ICC is a checkin' on down the line...</br>
+                ..Well, my rig's a little old but that don't mean she's slow
 
-    .uk-grid-medium.uk-grid-match(uk-grid, class='uk-child-width-1-2@s uk-child-width-1-3@m')
-        each services, title in data.services
-            div
-                .uk-card.uk-card-default(uk-parallax='opacity: 0,1; y: 80,0; viewport: 0.3')
-                    .uk-card-header
-                        h3.uk-card-title #{title}
-                    .uk-card-body
-                        ul.uk-list
-                            each service in services
-                                li(uk-parallax='opacity: 0,1; x: 80,0; viewport: 0.3') #{service}
+        .uk-grid-medium.uk-grid-match(uk-grid, class='uk-child-width-1-2@s uk-child-width-1-3@m')
+            each services, title in data.services
+                div
+                    .uk-card.uk-card-default(uk-parallax='opacity: 0,1; y: 80,0; viewport: 0.3')
+                        .uk-card-header
+                            h3.uk-card-title #{title}
+                        .uk-card-body
+                            ul.uk-list
+                                each service in services
+                                    li(uk-parallax='opacity: 0,1; x: 80,0; viewport: 0.3') #{service}
