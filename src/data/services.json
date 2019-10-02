@@ -14,13 +14,7 @@
         "Power Steering Hoses",
         "Springs"
     ],
-    "Brake System": [
-        "Adjustment",
-        "Air Lines",
-        "Brake Chamber (Maxi, Pancake)",
-        "Brakes",
-        "Valves"
-    ],
+    "Brakes": ["Adjustment", "Air Lines", "Brake Chamber (Maxi, Pancake)", "Brakes", "Valves"],
     "Cooling System": ["Fan Clutch", "Hoses & Fittings", "Sensors", "Water Pump"],
     "Driveline": [
         "Clutch Adjustment",
@@ -46,7 +40,7 @@
         "Turbo Hoses & Clamps"
     ],
     "Fuel System": ["Filters", "Fuel Delivery", "Fuel Prime", "Fuel Injector Lines", "Water Pump"],
-    "Trailer Systems": [
+    "Trailers": [
         "5th Wheel",
         "Electrical 7-Way/Pigtail Wiring, Boxes, Lights",
         "Landing Gear Legs (Dolly Legs)",
