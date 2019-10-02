@@ -10,14 +10,13 @@ html(lang='en')
             name='viewport',
             content='width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1.0'
         )
-        +pageMeta(name, desc, 'https://my.site/index.html', '/icons/android-chrome-192x192.png')
+        +pageMeta(name, description, website, '/icons/android-chrome-192x192.png')
         meta(name='msapplication-config', content='/browserconfig.xml')
         link(rel='manifest', href='/manifest.webmanifest')
         include components/favicons
         link(rel='stylesheet', href='style/index.scss')
 
     body
-        //- .uk-container.uk-container-medium.uk-container-center
         include components/header.pug
         block content
         include components/footer.pug
