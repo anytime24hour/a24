@@ -6,5 +6,8 @@
     "javascript.validate.enable": false,
     "eslint.autoFixOnSave": true,
     "css.validate": false,
-    "scss.validate": false
+    "scss.validate": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
 }
