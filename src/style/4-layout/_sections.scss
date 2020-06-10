@@ -51,13 +51,11 @@
 }
 
 #contact {
-    blockquote {
-        br:nth-of-type(odd) {
+    blockquote br:nth-of-type(odd) {
             @media (min-width: $breakpoint-medium) {
                 display: none;
             }
         }
-    }
     .uk-button-primary {
         padding: 0.5em 1.5em;
     }
