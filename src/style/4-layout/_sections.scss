@@ -1,6 +1,4 @@
-#about,
-#philosophy,
-#locations {
+#about {
     min-height: 60vh;
 }
 
@@ -15,16 +13,6 @@
 
     h1 {
         margin-top: 10%;
-    }
-
-    #map {
-        height: 480px;
-        width: 100%;
-
-        @media screen and (max-width: $breakpoint-small-max) {
-            height: 400px;
-            width: 100%;
-        }
     }
 }
 
