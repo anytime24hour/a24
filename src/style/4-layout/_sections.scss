@@ -2,6 +2,10 @@
     min-height: 60vh;
 }
 
+#philosophy {
+    background-color: $color-dot-red;
+}
+
 #about {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     position: relative;
@@ -52,10 +56,10 @@
 
 #contact {
     blockquote br:nth-of-type(odd) {
-            @media (min-width: $breakpoint-medium) {
-                display: none;
-            }
+        @media (min-width: $breakpoint-medium) {
+            display: none;
         }
+    }
     .uk-button-primary {
         padding: 0.5em 1.5em;
     }

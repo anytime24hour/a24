@@ -5,7 +5,7 @@
         "Air Governor",
         "Air Lines & Hoses",
         "Gladhands",
-        "Valves"
+        "Air Valves"
     ],
     "Axle, Suspension & Steering": [
         "Airbags",
@@ -14,14 +14,15 @@
         "Power Steering Hoses",
         "Springs"
     ],
-    "Brakes": ["Adjustment", "Air Lines", "Brake Chamber (Maxi, Pancake)", "Brakes", "Valves"],
-    "Cooling System": ["Fan Clutch", "Hoses & Fittings", "Sensors", "Water Pump"],
-    "Driveline": [
-        "Clutch Adjustment",
-        "Clutch Pedal Linkage",
-        "Driveshaft",
-        "Transmission Shifter Linkage"
+    "Brakes": [
+        "Adjustment",
+        "Air Lines",
+        "Brake Chamber (Maxi, Pancake)",
+        "Brake Shoes",
+        "Brake Valves"
     ],
+    "Cooling System": ["Fan Clutch", "Hoses & Fittings", "Sensors", "Water Pump"],
+    "Driveline": ["Clutch Adjustment", "Clutch Pedal Linkage"],
     "Electrical System": [
         "Alternator",
         "Batteries",
@@ -36,25 +37,21 @@
         "Belts",
         "Diesel Exhaust Fluid (DEF)",
         "Emissions/EGR/DPF/Regeneration",
-        "Filters",
         "Turbo Hoses & Clamps"
     ],
-    "Fuel System": ["Filters", "Fuel Delivery", "Fuel Prime", "Fuel Injector Lines", "Water Pump"],
+    "Fuel System": ["Filters", "Fuel Delivery", "Fuel Prime", "Fuel Injector Lines"],
     "Trailers": [
         "5th Wheel",
-        "Electrical 7-Way/Pigtail Wiring, Boxes, Lights",
+        "Electrical 7-Way/Pigtail Wiring, Boxes",
+        "Lights",
         "Landing Gear Legs (Dolly Legs)",
         "Liftgate/Hydraulic Ramps",
         "Reefer Engine",
         "Rollup & Swing Doors",
+        "Door Hinges, Rollers, and Hardware",
         "Roof Leak",
         "Tandems"
     ],
     "Wheels & Tires": ["Bearings", "Mud Flaps & Brackets", "Tires", "Wheel Seals"],
-    "And More...": [
-        "DOT/Federal Inspections",
-        "Lockouts",
-        "Welding (Select Areas)",
-        "Hamburger & Bottle Water"
-    ]
+    "And More...": ["DOT/Federal Inspections", "Lockouts"]
 }
