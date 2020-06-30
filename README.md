@@ -1,4 +1,6 @@
-# ppuissant - Parcel Pug UIkit Sass
+# http://anytime24hour.com
+
+## Generated from [ppuissant](https://github.com/simsrw73/ppuissant) - Parcel Pug UIkit Sass
 
 Boilerplate for creating static websites that use [Parcel](https://parceljs.org/), [Pug](https://pugjs.org), [UIkit](https://getuikit.com/), and [Sass](https://sass-lang.com/).
 
