@@ -86,7 +86,7 @@
         "pug-lint": "^2.6.0",
         "rimraf": "^3.0.2",
         "sass": "^1.26.8",
-        "stylelint": "^13.6.0",
+        "stylelint": "^15.10.1",
         "stylelint-a11y": "^1.2.3",
         "stylelint-config-prettier": "^8.0.1",
         "stylelint-config-sass-guidelines": "^7.0.0",
