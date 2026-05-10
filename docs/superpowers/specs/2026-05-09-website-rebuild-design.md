@@ -10,12 +10,12 @@ Status: Approved for implementation planning
 ### Business
 - **Company:** A Anytime Anywhere 24 Hour Mobile Truck & Trailer Repair of Georgia, LLC
 - **URL:** https://anytime24hour.com
-- **Phone:** 478-994-8554
+- **Phone:** 800-646-1307
 - **Email:** operations@anytime24hour.com
 - **Founded:** 1981, Macon, Georgia
 - **Owner:** Richard "Dick" Holden — U.S. Army Ret. Major, Vietnam veteran, Silver Star (×2), Bronze Star (Valor), Purple Heart, Vietnamese Cross of Gallantry
 - **Service type:** Mobile service area business — techs dispatch from home directly to customer location
-- **Service area:** Metro Atlanta and Middle Georgia (McDonough to Dublin, Milledgeville to Perry, Forsyth and surrounding counties)
+- **Service area:** Metro Atlanta and Middle Georgia. Current techs based in: College Park (Metro Atlanta), Forsyth (Middle Georgia), Macon (Middle Georgia). "Metro Atlanta" and "Middle Georgia" are the locally-recognized search terms used in marketing; coverage radiates from those three cities.
 - **Vehicles served:** Tractor-trailers, box trucks, RVs, buses. **No passenger vehicles. No light trucks.**
 
 ### Goals
@@ -110,10 +110,10 @@ Multi-page structure. Each page is an independent SEO target.
 │   ├── /services/wheels-tires
 │   └── /services/dot-inspection
 ├── /service-areas
-│   ├── /service-areas/atlanta
-│   ├── /service-areas/macon
-│   ├── /service-areas/middle-georgia
-│   └── /service-areas/[additional cities TBD]
+│   ├── /service-areas/metro-atlanta       (College Park tech, broader Atlanta coverage)
+│   ├── /service-areas/macon               (Macon tech)
+│   ├── /service-areas/forsyth             (Forsyth tech)
+│   └── /service-areas/middle-georgia      (umbrella page for Forsyth + Macon region)
 ├── /about
 ├── /faq
 ├── /contact
@@ -181,7 +181,7 @@ Multi-page structure. Each page is an independent SEO target.
 ### About Page
 - Dick's full biography (already written — move from modal to dedicated page)
 - Military service and decorations displayed as styled badges, not wall of text
-- Family team section: Benny Heinzelmann, Josh Presley, Julie Presley (CFO), Mrs. Holden
+- Family team section: Benny Heinzelmann, Josh Presley, Julie Presley (CFO)
 - Company history timeline from 1981
 
 ### FAQ Page (AEO Priority)
@@ -195,6 +195,7 @@ Seed questions to write with FAQ schema:
 - "Do you work on cars or light trucks?" (Answer: No — explicit)
 - "Are you available on weekends and holidays?"
 - "How do I request service?"
+- "Do you work on hydraulics — liftgates, ramps, and hydraulic systems?"
 
 ### Dropped Content
 - Song quote ("Oh well, my hometown's a comin' in sight...") — removed
