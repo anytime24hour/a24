@@ -36,7 +36,7 @@
 
   ```bash
   # From your local machine (uses existing deploy credentials)
-  scp -rP 65002 u290183021@185.201.10.52:public_html/ docs/legacy-backup/
+  scp -r anytimk4@173.254.104.88:public_html/ docs/legacy-backup/
   ```
 
 - [ ] **Step 2: Commit the backup**
@@ -65,7 +65,7 @@
   | Site Description | `Mobile heavy-duty truck and trailer repair — Metro Atlanta & Middle Georgia` |
   | Admin Username | *(choose a strong username — not "admin")* |
   | Admin Password | *(generate strong password — save in password manager)* |
-  | Admin Email | `operations@anytime24hour.com` |
+  | Admin Email | `anytime24hour@gmail.com` |
   | Select Language | English |
 
 - [ ] **Step 3: After install, enable maintenance mode immediately**
@@ -476,7 +476,7 @@
 
 - [ ] **Step 2: Set alert email**
 
-  Wordfence → All Options → Email Alert Preferences. Set **Alert email address** to `operations@anytime24hour.com`. Enable: "Alert me when Wordfence is automatically updated", "Alert me if Wordfence is deactivated".
+  Wordfence → All Options → Email Alert Preferences. Set **Alert email address** to `anytime24hour@gmail.com`. Enable: "Alert me when Wordfence is automatically updated", "Alert me if Wordfence is deactivated".
 
 - [ ] **Step 3: Enable auto-updates for Wordfence**
 
