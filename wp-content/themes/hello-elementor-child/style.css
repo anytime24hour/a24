@@ -1,0 +1,246 @@
+/*
+Theme Name: Hello Elementor Child
+Template: hello-elementor
+Version: 1.0.0
+Description: D1 Dark Highway design system for A Anytime Anywhere
+*/
+
+/* ── D1 Design System Variables ── */
+:root {
+    --d1-bg:        #111111;
+    --d1-bg-alt:    #0d0d0d;
+    --d1-orange:    #FF6B00;
+    --d1-gold:      #C9A84C;
+    --d1-white:     #ffffff;
+    --d1-mid:       #aaaaaa;
+    --d1-dark:      #555555;
+    --d1-border:    rgba(255, 255, 255, 0.07);
+}
+
+html, body {
+    background-color: var(--d1-bg) !important;
+    color: var(--d1-white);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: var(--d1-orange); border-radius: 0; }
+
+/* ── Links ── */
+a { color: var(--d1-orange); }
+a:hover { color: #ff8c3a; text-decoration: none; }
+
+/* ── Elementor nav overrides ── */
+.elementor-nav-menu a,
+.elementor-nav-menu--main .elementor-item {
+    color: var(--d1-mid) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    font-size: 0.72rem !important;
+}
+.elementor-nav-menu a:hover,
+.elementor-nav-menu--main .elementor-item:hover {
+    color: var(--d1-orange) !important;
+}
+
+/* ── Veteran badge ── */
+.veteran-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--d1-gold);
+    border: 1px solid rgba(201, 168, 76, 0.4);
+    padding: 0.15rem 0.45rem;
+}
+
+/* ── Military decoration badges ── */
+.medal-badge {
+    display: inline-flex;
+    font-size: 0.65rem;
+    background: rgba(201, 168, 76, 0.08);
+    border: 1px solid rgba(201, 168, 76, 0.28);
+    color: var(--d1-gold);
+    padding: 0.2rem 0.5rem;
+    letter-spacing: 0.08em;
+    margin: 0.15rem;
+}
+
+/* ── Trust bar dividers ── */
+.trust-bar-item {
+    border-right: 1px solid var(--d1-border);
+}
+.trust-bar-item:last-child { border-right: none; }
+
+/* ── Instrument panel: scan-line texture ── */
+.panel-cell {
+    background-color: #141414;
+    position: relative;
+    transition: background-color 0.15s, border-color 0.15s;
+}
+.panel-cell::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        rgba(255, 255, 255, 0.012) 3px,
+        rgba(255, 255, 255, 0.012) 4px
+    );
+    pointer-events: none;
+    z-index: 0;
+}
+.panel-cell:hover { background-color: #1a1a1a; }
+.panel-cell > * { position: relative; z-index: 1; }
+
+/* ── Instrument panel: gauge ring ── */
+.gauge-ring {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #2d2d2d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.65rem;
+    transition: border-color 0.15s;
+    font-size: 0.9rem;
+    color: var(--d1-dark);
+}
+.panel-cell:hover .gauge-ring {
+    border-color: var(--d1-orange);
+    color: var(--d1-orange);
+}
+
+/* ── Instrument panel: status bar ── */
+.panel-statusbar {
+    background: #0f0f0f;
+    border-top: 1px solid #222222;
+    padding: 0.65rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--d1-dark);
+}
+.panel-statusbar .status-indicator::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: var(--d1-orange);
+    border-radius: 50%;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+}
+.panel-statusbar .view-all {
+    color: var(--d1-orange);
+    cursor: pointer;
+}
+
+/* ── Ghost background text ── */
+.ghost-bg-text {
+    position: absolute;
+    font-size: 18vw;
+    font-weight: 900;
+    color: rgba(255, 107, 0, 0.04);
+    white-space: nowrap;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    pointer-events: none;
+    user-select: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+/* ── Phone CTA box ── */
+.phone-cta-box {
+    border: 1px solid rgba(255, 107, 0, 0.3);
+    background: rgba(255, 107, 0, 0.06);
+    padding: 1.25rem 3rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.phone-cta-box .cta-label {
+    font-size: 0.55rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--d1-orange);
+    margin-bottom: 0.3rem;
+}
+.phone-cta-box .cta-number {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 900;
+    color: var(--d1-orange);
+    letter-spacing: -0.01em;
+    line-height: 1;
+}
+
+/* ── Section eyebrow label ── */
+.section-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--d1-orange);
+    margin-bottom: 0.5rem;
+}
+.section-eyebrow::before {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background: var(--d1-orange);
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+/* ── Featured panel cell (DOT Inspection) ── */
+.panel-cell-featured {
+    border: 1px solid rgba(255, 107, 0, 0.25) !important;
+}
+.panel-cell-featured .gauge-ring {
+    border-color: rgba(255, 107, 0, 0.4);
+    color: var(--d1-orange);
+}
+
+/* ── Service area map section ── */
+.area-list-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--d1-border);
+    font-size: 0.85rem;
+    color: var(--d1-mid);
+}
+.area-list-item::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--d1-orange);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* ── No-auto-repair callout ── */
+.vehicle-scope-note {
+    background: rgba(255, 107, 0, 0.06);
+    border-left: 3px solid var(--d1-orange);
+    padding: 0.85rem 1rem;
+    font-size: 0.8rem;
+    color: var(--d1-mid);
+    margin-top: 1rem;
+}
