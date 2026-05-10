@@ -1,0 +1,254 @@
+[26-Jul-2024 22:15:14 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[26-Jul-2024 22:15:16 UTC] Cron reschedule event error for hook: nfd_module_installer_plugin_install_cron, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"thirty_seconds","args":[],"interval":30}
+[26-Jul-2024 22:15:37 UTC] Cron reschedule event error for hook: nfd_module_installer_theme_install_cron, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"ten_seconds","args":[],"interval":10}
+[26-Jul-2024 22:26:58 UTC] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, WP_Error given in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-plugin.php:88
+Stack trace:
+#0 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-plugin.php(88): array_key_exists('jetpack', Object(WP_Error))
+#1 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-manager.php(2120): Automattic\Jetpack\Connection\Plugin->is_only()
+#2 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-manager.php(1758): Automattic\Jetpack\Connection\Manager->disconnect_site(true, false)
+#3 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/jetpack/class.jetpack.php(2967): Automattic\Jetpack\Connection\Manager->remove_connection(true)
+#4 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/jetpack/class.jetpack.php(2939): Jetpack::disconnect()
+#5 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): Jetpack::plugin_deactivation(false)
+#6 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /home1/anytimk4/public_html/website_9592473b/wp-admin/includes/plugin.php(826): do_action('deactivate_jetp...', false)
+#9 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-installer/includes/Services/PluginInstaller.php(387): deactivate_plugins('jetpack/jetpack...')
+#10 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-installer/includes/Tasks/PluginDeactivationTask.php(87): NewfoldLabs\WP\Module\Installer\Services\PluginInstaller::deactivate('jetpack')
+#11 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-installer/includes/TaskManagers/PluginDeactivationTaskManager.php(69): NewfoldLabs\WP\Module\Installer\Tasks\PluginDeactivationTask->execute()
+#12 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Installer\TaskManagers\PluginDeactivationTaskManager->deactivate()
+#13 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#14 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#15 /home1/anytimk4/public_html/website_9592473b/wp-cron.php(191): do_action_ref_array('nfd_module_inst...', Array)
+#16 {main}
+  thrown in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-plugin.php on line 88
+[26-Jul-2024 22:29:02 UTC] Cron reschedule event error for hook: nfd_module_installer_plugin_install_cron, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"thirty_seconds","args":[],"interval":30}
+[26-Jul-2024 22:33:52 UTC] Cron reschedule event error for hook: nfd_module_installer_plugin_install_cron, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"thirty_seconds","args":[],"interval":30}
+[30-Sep-2024 17:31:19 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `Jx0_options` WHERE `option_name` = '_site_transient_wp_theme_files_patterns-7ae1338383faae2a1e0f798286650341' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->get_pattern_cache, get_site_transient, delete_site_option, delete_network_option, delete_option
+[02-Oct-2024 17:07:19 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `Jx0_options` WHERE `option_name` = '_transient_nfd_site_capabilities' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('after_setup_theme'), WP_Hook->do_action, WP_Hook->apply_filters, NewfoldLabs\WP\Module\Onboarding\ModuleController::module_switcher, NewfoldLabs\WP\Module\Onboarding\ModuleController::verify_onboarding_criteria, NewfoldLabs\WP\Module\Onboarding\Data\Flows\Flows::get_flows, NewfoldLabs\WP\Module\Onboarding\Data\Data::current_brand, NewfoldLabs\WP\Module\Onboarding\Data\Brands::get_brands, NewfoldLabs\WP\Module\Onboarding\Data\Config::has_ai_sitegen, NewfoldLabs\WP\Module\Onboarding\Data\Config::get_site_capability, NewfoldLabs\WP\Module\Data\SiteCapabilities->get, NewfoldLabs\WP\Module\Data\SiteCapabilities->exists, NewfoldLabs\WP\Module\Data\SiteCapabilities->all, get_transient, delete_option
+[02-Oct-2024 17:07:27 UTC] PHP Fatal error:  Uncaught Error: Class "ActionScheduler_StoreSchema" not found in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/wpforms-lite/vendor/woocommerce/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:41
+Stack trace:
+#0 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(322): ActionScheduler_DBStore->init()
+#1 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /home1/anytimk4/public_html/website_9592473b/wp-settings.php(700): do_action('init')
+#4 /home1/anytimk4/public_html/website_9592473b/wp-config.php(101): require_once('/home1/anytimk4...')
+#5 /home1/anytimk4/public_html/website_9592473b/wp-load.php(50): require_once('/home1/anytimk4...')
+#6 /home1/anytimk4/public_html/website_9592473b/wp-cron.php(46): require_once('/home1/anytimk4...')
+#7 {main}
+  thrown in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/wpforms-lite/vendor/woocommerce/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php on line 41
+[04-Oct-2024 05:41:18 UTC] PHP Warning:  Undefined array key "isJarvis" in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/SiteCapabilities.php on line 48
+[08-Oct-2024 11:30:33 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home1/anytimk4/public_html/website_9592473b/wp-includes/load.php on line 386
+[15-Oct-2024 13:13:13 UTC] PHP Warning:  Undefined array key "hasAISiteGen" in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/SiteCapabilities.php on line 48
+[08-Dec-2024 20:15:25 UTC] Cron reschedule event error for hook: nfd_data_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"minutely","args":[],"interval":60}
+[08-Dec-2024 20:15:25 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[08-Dec-2024 20:15:25 UTC] Cron unschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[08-Dec-2024 20:15:25 UTC] Cron reschedule event error for hook: jetpack_clean_nonces, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[08-Dec-2024 20:15:25 UTC] Cron unschedule event error for hook: jetpack_clean_nonces, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[08-Dec-2024 20:15:25 UTC] Cron reschedule event error for hook: monsterinsights_feature_feedback_checkin, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"daily","args":[],"interval":86400}
+[08-Dec-2024 20:15:25 UTC] Cron unschedule event error for hook: monsterinsights_feature_feedback_checkin, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"daily","args":[],"interval":86400}
+[08-Dec-2024 20:15:25 UTC] Cron reschedule event error for hook: wp_update_user_counts, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"twicedaily","args":[],"interval":43200}
+[08-Dec-2024 20:15:25 UTC] Cron unschedule event error for hook: wp_update_user_counts, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"twicedaily","args":[],"interval":43200}
+[08-Dec-2024 20:15:25 UTC] Cron reschedule event error for hook: wp_version_check, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"twicedaily","args":[],"interval":43200}
+[08-Dec-2024 20:15:25 UTC] Cron unschedule event error for hook: wp_version_check, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"twicedaily","args":[],"interval":43200}
+[01-Jan-2025 20:14:18 UTC] PHP Warning:  Undefined array key "url" in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/wpforms-lite/src/Forms/IconChoices.php on line 127
+[01-Jan-2025 20:14:18 UTC] PHP Warning:  Undefined array key "path" in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/wpforms-lite/src/Forms/IconChoices.php on line 128
+[01-Jan-2025 20:14:20 UTC] Cron reschedule event error for hook: nfd_data_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"minutely","args":[],"interval":60}
+[01-Jan-2025 20:14:20 UTC] Cron unschedule event error for hook: nfd_data_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"minutely","args":[],"interval":60}
+[01-Jan-2025 20:14:20 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[02-Feb-2025 14:25:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function NewfoldLabs\WP\Module\Data\Listeners\wc_get_is_paid_statuses() in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php:86
+Stack trace:
+#0 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Commerce->orders_count(Array)
+#1 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Cron.php(49): apply_filters('newfold_wp_data...', Array)
+#3 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Cron->update()
+#4 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home1/anytimk4/public_html/website_9592473b/wp-cron.php(191): do_action_ref_array('nfd_data_cron', Array)
+#7 {main}
+  thrown in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php on line 86
+[09-Feb-2025 00:26:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function NewfoldLabs\WP\Module\Data\Listeners\wc_get_is_paid_statuses() in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php:86
+Stack trace:
+#0 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Commerce->orders_count(Array)
+#1 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Cron.php(49): apply_filters('newfold_wp_data...', Array)
+#3 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Cron->update()
+#4 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home1/anytimk4/public_html/website_9592473b/wp-cron.php(191): do_action_ref_array('nfd_data_cron', Array)
+#7 {main}
+  thrown in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php on line 86
+[14-Feb-2025 01:23:46 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[14-Feb-2025 01:23:46 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[16-Feb-2025 01:18:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function NewfoldLabs\WP\Module\Data\Listeners\wc_get_is_paid_statuses() in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php:86
+Stack trace:
+#0 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Commerce->orders_count(Array)
+#1 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Cron.php(49): apply_filters('newfold_wp_data...', Array)
+#3 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Cron->update()
+#4 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home1/anytimk4/public_html/website_9592473b/wp-cron.php(191): do_action_ref_array('nfd_data_cron', Array)
+#7 {main}
+  thrown in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php on line 86
+[18-Feb-2025 00:59:51 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[18-Feb-2025 00:59:51 UTC] Cron unschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[18-Feb-2025 00:59:51 UTC] Cron reschedule event error for hook: jetpack_clean_nonces, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[18-Feb-2025 00:59:51 UTC] Cron unschedule event error for hook: jetpack_clean_nonces, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[18-Feb-2025 00:59:51 UTC] Cron reschedule event error for hook: monsterinsights_feature_feedback_checkin, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"daily","args":[],"interval":86400}
+[18-Feb-2025 00:59:51 UTC] Cron unschedule event error for hook: monsterinsights_feature_feedback_checkin, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"daily","args":[],"interval":86400}
+[18-Feb-2025 00:59:51 UTC] Cron reschedule event error for hook: wp_update_user_counts, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"twicedaily","args":[],"interval":43200}
+[18-Feb-2025 00:59:51 UTC] Cron unschedule event error for hook: wp_update_user_counts, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"twicedaily","args":[],"interval":43200}
+[18-Feb-2025 00:59:51 UTC] Cron reschedule event error for hook: wp_version_check, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"twicedaily","args":[],"interval":43200}
+[18-Feb-2025 00:59:51 UTC] Cron unschedule event error for hook: wp_version_check, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"twicedaily","args":[],"interval":43200}
+[24-Feb-2025 01:42:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function NewfoldLabs\WP\Module\Data\Listeners\wc_get_is_paid_statuses() in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php:86
+Stack trace:
+#0 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Commerce->orders_count(Array)
+#1 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Cron.php(49): apply_filters('newfold_wp_data...', Array)
+#3 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Cron->update()
+#4 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home1/anytimk4/public_html/website_9592473b/wp-cron.php(191): do_action_ref_array('nfd_data_cron', Array)
+#7 {main}
+  thrown in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php on line 86
+[02-Mar-2025 03:36:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function NewfoldLabs\WP\Module\Data\Listeners\wc_get_is_paid_statuses() in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php:86
+Stack trace:
+#0 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Commerce->orders_count(Array)
+#1 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Cron.php(49): apply_filters('newfold_wp_data...', Array)
+#3 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Cron->update()
+#4 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home1/anytimk4/public_html/website_9592473b/wp-cron.php(191): do_action_ref_array('nfd_data_cron', Array)
+#7 {main}
+  thrown in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php on line 86
+[09-Mar-2025 00:43:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function NewfoldLabs\WP\Module\Data\Listeners\wc_get_is_paid_statuses() in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php:86
+Stack trace:
+#0 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Commerce->orders_count(Array)
+#1 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Cron.php(49): apply_filters('newfold_wp_data...', Array)
+#3 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Cron->update()
+#4 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home1/anytimk4/public_html/website_9592473b/wp-cron.php(191): do_action_ref_array('nfd_data_cron', Array)
+#7 {main}
+  thrown in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php on line 86
+[16-Mar-2025 04:06:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function NewfoldLabs\WP\Module\Data\Listeners\wc_get_is_paid_statuses() in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php:86
+Stack trace:
+#0 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Commerce->orders_count(Array)
+#1 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Cron.php(49): apply_filters('newfold_wp_data...', Array)
+#3 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Cron->update()
+#4 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home1/anytimk4/public_html/website_9592473b/wp-cron.php(191): do_action_ref_array('nfd_data_cron', Array)
+#7 {main}
+  thrown in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php on line 86
+[24-Mar-2025 03:07:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function NewfoldLabs\WP\Module\Data\Listeners\wc_get_is_paid_statuses() in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php:86
+Stack trace:
+#0 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Commerce->orders_count(Array)
+#1 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Cron.php(49): apply_filters('newfold_wp_data...', Array)
+#3 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Cron->update()
+#4 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home1/anytimk4/public_html/website_9592473b/wp-cron.php(191): do_action_ref_array('nfd_data_cron', Array)
+#7 {main}
+  thrown in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php on line 86
+[29-Mar-2025 23:42:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function NewfoldLabs\WP\Module\Data\Listeners\wc_get_is_paid_statuses() in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php:86
+Stack trace:
+#0 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Commerce->orders_count(Array)
+#1 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Cron.php(49): apply_filters('newfold_wp_data...', Array)
+#3 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Cron->update()
+#4 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home1/anytimk4/public_html/website_9592473b/wp-cron.php(191): do_action_ref_array('nfd_data_cron', Array)
+#7 {main}
+  thrown in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php on line 86
+[06-Apr-2025 02:42:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function NewfoldLabs\WP\Module\Data\Listeners\wc_get_is_paid_statuses() in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php:86
+Stack trace:
+#0 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Commerce->orders_count(Array)
+#1 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Cron.php(49): apply_filters('newfold_wp_data...', Array)
+#3 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Cron->update()
+#4 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home1/anytimk4/public_html/website_9592473b/wp-cron.php(191): do_action_ref_array('nfd_data_cron', Array)
+#7 {main}
+  thrown in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php on line 86
+[13-Apr-2025 19:07:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function NewfoldLabs\WP\Module\Data\Listeners\wc_get_is_paid_statuses() in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php:86
+Stack trace:
+#0 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Commerce->orders_count(Array)
+#1 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Cron.php(49): apply_filters('newfold_wp_data...', Array)
+#3 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Data\Listeners\Cron->update()
+#4 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#6 /home1/anytimk4/public_html/website_9592473b/wp-cron.php(191): do_action_ref_array('nfd_data_cron', Array)
+#7 {main}
+  thrown in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/Listeners/Commerce.php on line 86
+[18-Apr-2025 01:25:37 UTC] Cron reschedule event error for hook: nfd_data_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"minutely","args":[],"interval":60}
+[18-Apr-2025 01:25:37 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[18-Apr-2025 01:25:37 UTC] Cron unschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[18-Apr-2025 01:25:37 UTC] Cron reschedule event error for hook: jetpack_clean_nonces, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[18-Apr-2025 01:25:37 UTC] Cron unschedule event error for hook: jetpack_clean_nonces, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[18-Apr-2025 01:25:37 UTC] Cron unschedule event error for hook: wp_version_check, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"twicedaily","args":[],"interval":43200}
+[18-Apr-2025 02:20:46 UTC] Cron reschedule event error for hook: wp_version_check, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"twicedaily","args":[],"interval":43200}
+[05-Jul-2025 08:44:47 UTC] PHP Warning:  dns_get_record(): A temporary server error occurred. in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-status/src/class-host.php on line 153
+[05-Jul-2025 08:45:17 UTC] PHP Warning:  dns_get_record(): A temporary server error occurred. in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-status/src/class-host.php on line 153
+[06-Aug-2025 23:39:10 UTC] PHP Warning:  rename(/tmp/bluehost-wordpress-plugin-dfIN8Z.tmp,/tmp/bluehost-wordpress-plugin.zip): Operation not permitted in /home1/anytimk4/public_html/website_9592473b/wp-admin/includes/file.php on line 1234
+[06-Aug-2025 23:39:10 UTC] PHP Warning:  unlink(/tmp/bluehost-wordpress-plugin.zip): Operation not permitted in /home1/anytimk4/public_html/website_9592473b/wp-admin/includes/file.php on line 1239
+[16-Aug-2025 23:41:33 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `Jx0_options` WHERE `option_name` = '_transient_nfd_site_capabilities' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, NewfoldLabs\WP\Module\Performance\PerformanceFeature->NewfoldLabs\WP\Module\Performance\{closure}, NewfoldLabs\WP\Module\Performance\Performance->__construct, NewfoldLabs\WP\Module\Performance\Images\ImageManager->__construct, NewfoldLabs\WP\Module\Performance\Images\ImageManager->initialize_settings, NewfoldLabs\WP\Module\Performance\Images\ImageSettings->__construct, NewfoldLabs\WP\Module\Performance\Images\ImageSettings::get_default_settings, NewfoldLabs\WP\Module\Data\SiteCapabilities->get, NewfoldLabs\WP\Module\Data\SiteCapabilities->exists, NewfoldLabs\WP\Module\Data\SiteCapabilities->all, NewfoldLabs\WP\Module\Data\Helpers\Transient::get, get_transient, delete_option
+[23-Sep-2025 15:52:27 UTC] PHP Warning:  include(/home1/anytimk4/public_html/website_9592473b/wp-content/plugins/wordpress-seo/vendor/composer/../../src/promotions/domain/black-friday-checklist-promotion.php): Failed to open stream: No such file or directory in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/ClassLoader.php on line 576
+[23-Sep-2025 15:52:27 UTC] PHP Warning:  include(): Failed opening '/home1/anytimk4/public_html/website_9592473b/wp-content/plugins/wordpress-seo/vendor/composer/../../src/promotions/domain/black-friday-checklist-promotion.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/ClassLoader.php on line 576
+[25-Sep-2025 17:20:30 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home1/anytimk4/public_html/website_9592473b/wp-includes/load.php on line 411
+[28-Sep-2025 00:55:38 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `Jx0_options` WHERE `option_name` = '_site_transient_wp_theme_files_patterns-236c48c07cffe3e00a10ca02827a44e6' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->get_pattern_cache, get_site_transient, delete_site_option, delete_network_option, delete_option
+[28-Sep-2025 00:55:38 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `Jx0_options` WHERE `option_name` = '_site_transient_wp_theme_files_patterns-236c48c07cffe3e00a10ca02827a44e6' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->get_pattern_cache, get_site_transient, delete_site_option, delete_network_option, delete_option
+[12-Oct-2025 00:16:25 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `Jx0_options` WHERE `option_name` = '_site_transient_wp_theme_files_patterns-236c48c07cffe3e00a10ca02827a44e6' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->get_pattern_cache, get_site_transient, delete_site_option, delete_network_option, delete_option
+[12-Oct-2025 00:16:25 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `Jx0_options` WHERE `option_name` = '_site_transient_timeout_wp_theme_files_patterns-7ae1338383faae2a1e0f798286650341' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->get_pattern_cache, get_site_transient, delete_site_option, delete_network_option, delete_option
+[28-Nov-2025 01:55:55 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query INSERT INTO `Jx0_options` (`option_name`, `option_value`, `autoload`) VALUES ('_site_transient_wp_theme_files_patterns-236c48c07cffe3e00a10ca02827a44e6', 'a:2:{s:7:\"version\";s:5:\"1.0.0\";s:8:\"patterns\";a:0:{}}', 'off') ON DUPLICATE KEY UPDATE `option_name` = VALUES(`option_name`), `option_value` = VALUES(`option_value`), `autoload` = VALUES(`autoload`) made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->set_pattern_cache, set_site_transient, add_site_option, add_network_option, add_option
+[01-Dec-2025 08:35:34 UTC] PHP Warning:  Undefined array key "url" in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/wpforms-lite/src/Forms/IconChoices.php on line 127
+[01-Dec-2025 08:35:34 UTC] PHP Warning:  Undefined array key "path" in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/wpforms-lite/src/Forms/IconChoices.php on line 128
+[07-Dec-2025 12:58:40 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `Jx0_options` WHERE `option_name` = '_site_transient_timeout_wp_theme_files_patterns-236c48c07cffe3e00a10ca02827a44e6' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->get_pattern_cache, get_site_transient, delete_site_option, delete_network_option, delete_option
+[07-Dec-2025 12:58:40 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `Jx0_options` WHERE `option_name` = '_site_transient_timeout_wp_theme_files_patterns-236c48c07cffe3e00a10ca02827a44e6' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->get_pattern_cache, get_site_transient, delete_site_option, delete_network_option, delete_option
+[07-Dec-2025 12:58:40 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `Jx0_options` WHERE `option_name` = '_site_transient_timeout_wp_theme_files_patterns-236c48c07cffe3e00a10ca02827a44e6' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->get_pattern_cache, get_site_transient, delete_site_option, delete_network_option, delete_option
+[12-Dec-2025 04:36:14 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `Jx0_options` WHERE `option_name` = '_site_transient_wp_theme_files_patterns-7ae1338383faae2a1e0f798286650341' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->get_pattern_cache, get_site_transient, delete_site_option, delete_network_option, delete_option
+[12-Dec-2025 12:47:13 UTC] Cron reschedule event error for hook: jetpack_sync_full_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[12-Dec-2025 12:47:13 UTC] Cron unschedule event error for hook: jetpack_sync_full_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[18-Dec-2025 10:44:18 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[18-Dec-2025 10:44:18 UTC] Cron reschedule event error for hook: jetpack_sync_full_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[19-Dec-2025 00:22:00 UTC] MonsterInsights: Running migration 1.0.0-cache-table: Create custom cache table for improved performance
+[19-Dec-2025 00:22:00 UTC] MonsterInsights: Migration 1.0.0-cache-table completed successfully in 0.07 seconds
+[19-Dec-2025 00:22:00 UTC] MonsterInsights: Running migration 1.0.1-remove-per-user-cache: Remove per-user cache metadata (switched to site-wide cache)
+[19-Dec-2025 00:22:00 UTC] MonsterInsights: Migration 1.0.1-remove-per-user-cache completed successfully in 0.00 seconds
+[08-Jan-2026 23:44:46 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[08-Jan-2026 23:44:46 UTC] Cron reschedule event error for hook: jetpack_sync_full_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[29-Jan-2026 22:32:18 UTC] PHP Warning:  Undefined array key "hasCloudflarePolish" in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/includes/SiteCapabilities.php on line 46
+[30-Jan-2026 05:03:24 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `Jx0_options` WHERE `option_name` = '_site_transient_timeout_wp_theme_files_patterns-7ae1338383faae2a1e0f798286650341' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->get_pattern_cache, get_site_transient, delete_site_option, delete_network_option, delete_option
+[30-Jan-2026 05:03:26 UTC] Cron reschedule event error for hook: jetpack_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[03-Feb-2026 21:33:24 UTC] PHP Warning:  include(/home1/anytimk4/public_html/website_9592473b/wp-content/plugins/wordpress-seo/vendor/composer/../../src/config/schema-types.php): Failed to open stream: No such file or directory in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/ClassLoader.php on line 576
+[03-Feb-2026 21:33:24 UTC] PHP Warning:  include(): Failed opening '/home1/anytimk4/public_html/website_9592473b/wp-content/plugins/wordpress-seo/vendor/composer/../../src/config/schema-types.php' for inclusion (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/ClassLoader.php on line 576
+[03-Feb-2026 21:33:24 UTC] PHP Fatal error:  Uncaught Error: Class "Yoast\WP\SEO\Config\Schema_Types" not found in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php:178
+Stack trace:
+#0 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php(242): [constant expression]()
+#1 /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/wordpress-seo/wp-seo-main.php(340): WPSEO_Meta::init()
+#2 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(341): wpseo_init('')
+#3 /home1/anytimk4/public_html/website_9592473b/wp-includes/class-wp-hook.php(365): WP_Hook->apply_filters(NULL, Array)
+#4 /home1/anytimk4/public_html/website_9592473b/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#5 /home1/anytimk4/public_html/website_9592473b/wp-settings.php(593): do_action('plugins_loaded')
+#6 /home1/anytimk4/public_html/website_9592473b/wp-config.php(101): require_once('/home1/anytimk4...')
+#7 /home1/anytimk4/public_html/website_9592473b/wp-load.php(50): require_once('/home1/anytimk4...')
+#8 /home1/anytimk4/public_html/website_9592473b/wp-cron.php(46): require_once('/home1/anytimk4...')
+#9 {main}
+  thrown in /home1/anytimk4/public_html/website_9592473b/wp-content/plugins/wordpress-seo/inc/class-wpseo-meta.php on line 178
+[08-Mar-2026 08:31:20 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query DELETE FROM `Jx0_options` WHERE `option_name` = '_site_transient_timeout_wp_theme_files_patterns-236c48c07cffe3e00a10ca02827a44e6' made by require('wp-blog-header.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, _register_theme_block_patterns, WP_Theme->get_block_patterns, WP_Theme->get_pattern_cache, get_site_transient, delete_site_option, delete_network_option, delete_option
+[08-Mar-2026 08:31:34 UTC] Cron reschedule event error for hook: nfd_data_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"minutely","args":[],"interval":60}
+[02-Apr-2026 00:38:27 UTC] PHP Warning:  dir(/home1/anytimk4/public_html/website_9592473b/wp-content/upgrade/bluehost-wordpress-plugin-x0OHlO/bluehost-wordpress-plugin/vendor/wp-forge/wp-htaccess-manager/includes/): Failed to open directory: No such file or directory in /home1/anytimk4/public_html/website_9592473b/wp-admin/includes/class-wp-filesystem-direct.php on line 636
+[20-Apr-2026 02:47:46 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[20-Apr-2026 02:47:46 UTC] Cron unschedule event error for hook: epc_scheduled_purge_all, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":false,"args":[]}
+[20-Apr-2026 02:47:46 UTC] Cron reschedule event error for hook: jetpack_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[20-Apr-2026 02:47:46 UTC] Cron unschedule event error for hook: jetpack_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[20-Apr-2026 02:47:46 UTC] Cron reschedule event error for hook: jetpack_sync_full_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"jetpack_sync_interval","args":[],"interval":300}
+[30-Apr-2026 23:03:57 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[30-Apr-2026 23:03:57 UTC] Cron reschedule event error for hook: nfd_data_sync_cron, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"minutely","args":[],"interval":60}
