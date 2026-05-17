@@ -15,7 +15,7 @@ Status: Approved for implementation planning
 - **Founded:** 1981, Macon, Georgia
 - **Owner:** Richard "Dick" Holden — U.S. Army Ret. Major, Vietnam veteran, Silver Star (×2), Bronze Star (Valor), Purple Heart, Vietnamese Cross of Gallantry
 - **Service type:** Mobile service area business — techs dispatch from home directly to customer location
-- **Service area:** Metro Atlanta and Middle Georgia. Current techs based in: College Park (Metro Atlanta), Forsyth (Middle Georgia), Macon (Middle Georgia). "Metro Atlanta" and "Middle Georgia" are the locally-recognized search terms used in marketing; coverage radiates from those three cities.
+- **Service area:** Metro Atlanta and Middle Georgia. Techs based in: College Park (Metro Atlanta), Forsyth (neighbor city to Macon, Middle Georgia), Macon (Middle Georgia). Coverage radiates from those three cities. "Metro Atlanta" and "Middle Georgia" are the locally-recognized search terms used in marketing.
 - **Vehicles served:** Tractor-trailers, box trucks, RVs, buses. **No passenger vehicles. No light trucks.**
 
 ### Goals
